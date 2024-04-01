@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Nav() {
   return (
-    <nav className="flex flex-row justify-between items-center w-full px-12 h-14 border text-center sticky top-0 z-50 bg-inherit">
+    <nav className="flex flex-row justify-between items-center w-full px-12 h-14 border text-center sticky top-0 z-50 bg-inherit shadow-lg">
       <ul className="flex justify-start gap-12 items-center h-full">
         <li>
           <Link href="/">Overview</Link>
