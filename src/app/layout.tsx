@@ -4,6 +4,7 @@ import {
   Cormorant_Garamond,
   Assistant,
   Noto_Sans_JP,
+  Tilt_Warp,
 } from "next/font/google";
 import "./globals.css";
 
@@ -35,6 +36,13 @@ const jap = Noto_Sans_JP({
   variable: "--font-jap",
   display: "swap",
 });
+
+const titan = Tilt_Warp({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-titan",
+  display: "swap",
+});
 //
 
 export const metadata: Metadata = {
@@ -50,7 +58,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${satisfy.variable} ${cormo.variable} ${assistant.variable} ${jap.variable} bg-slate-50 w-screen min-h-screen relative`}
+        className={`${satisfy.variable} ${cormo.variable} ${assistant.variable} ${jap.variable} ${titan.variable} bg-slate-50 w-screen min-h-screen relative`}
       >
         <Nav />
 

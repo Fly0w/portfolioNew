@@ -27,6 +27,7 @@ const config: Config = {
         cormo: ["var(--font-cormo)"],
         assistant: ["var(--font-assistant)"],
         jap: ["var(--font-jap)"],
+        titan: ["var(--font-titan)"],
       },
     },
   },
